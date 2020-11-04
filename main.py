@@ -1,0 +1,13 @@
+import matplotlib.pyplot as plt
+import numpy as np
+
+x = np.array([14.2, 16.5, 11.8, 15.3, 18.8, 22.5, 19.5])
+y = np.array([220, 330, 190, 340, 410, 445, 415])
+
+plt.scatter(x, y, color="black", zorder=1)
+plt.plot(x, y, color="green", zorder=2)
+
+plt.xlabel("Temperature")
+plt.ylabel("Price in (R)")
+plt.title("Soup sales in relation to temperature")
+plt.show()
